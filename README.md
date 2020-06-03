@@ -7,7 +7,7 @@ cd sparkProject
 
 echo "test test world world count" > in.txt
 
-sbt package
+sbt package  ## package is a generate a light jar,  use sbt assembly if you want all library to be included in jar
 
 spark-submit --class com.example.sparkProject.CountingApp \
             --name myapp \
